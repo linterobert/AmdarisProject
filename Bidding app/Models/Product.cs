@@ -19,6 +19,10 @@ namespace Bidding_app.Entities
         Client _owner;
         bool _cashOut;
         List<Review> _reviews;
+        public Product()
+        {
+
+        }
         public Product(string productName, double price, DateTime postTime, DateTime finalTime, Company company, Client owner)
         {
             _productName = productName;

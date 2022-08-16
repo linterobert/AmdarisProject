@@ -9,9 +9,11 @@ namespace Bidding_app.Interfaces
 {
     internal interface IProduct
     {
+        public bool CreateProduct();
         public const double BitConstant = 0.1;
         public bool CheckAvailable();
         public void MakeOffer(Client client, double offer);
+        void CreateProduct(Func<Product> isAny);
     }
 
 }
